@@ -10,7 +10,12 @@ export default function OwnerPage() {
 			</picture>
 
 			<h2>Short Biography</h2>
-			<p className="w-1/2">Hi I&apos;m Supakarn Tangsirivatthanavong.</p>
+			<p className="w-1/2">
+				A tech enthusiast with experience in JavaScript, React, CSS, Node.js,
+				and state management. Able to work together as a team, high orientation
+				to detail, and dedicated to providing excellence in every project.
+				Driven by the love of coding.
+			</p>
 		</div>
 	);
 }
