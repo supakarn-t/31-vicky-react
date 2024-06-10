@@ -69,7 +69,7 @@ export default function Admin({ userList, setUserList }) {
 			);
 			setReload(!reload);
 		} catch (error) {
-			console.error("Failed to put data:", error);
+			console.error("Failed to delete data:", error);
 		}
 	}
 
