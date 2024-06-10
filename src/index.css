@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	*,
+	:hover {
+		@apply transition duration-200;
+	}
+}
