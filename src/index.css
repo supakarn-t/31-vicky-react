@@ -27,7 +27,7 @@
 		@apply border border-sky-300 h-16;
 	}
 	th {
-		@apply bg-gradient-to-br from-cyan-200 to-sky-300;
+		@apply bg-sky-300;
 	}
 }
 
