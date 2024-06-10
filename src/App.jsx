@@ -1,10 +1,16 @@
+import { useState } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import UserPage from "./pages/UserPage.jsx";
+import AdminPage from "./pages/AdminPage.jsx";
 import OwnerPage from "./pages/OwnerPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 
 export default function App() {
+	const [userList, setUserList] = useState([]);
+	const [userId, setUserId] = useState(1);
+
 	const router = createBrowserRouter([
 		{
 			path: "/",
@@ -19,6 +25,21 @@ export default function App() {
 				{
 					path: "/",
 					element: <HomePage />,
+				},
+				{
+					path: "/user",
+					element: <UserPage userList={userList} />,
+				},
+				{
+					path: "/admin",
+					element: (
+						<AdminPage
+							userList={userList}
+							setUserList={setUserList}
+							userId={userId}
+							setUserId={setUserId}
+						/>
+					),
 				},
 				{
 					path: "/owner",

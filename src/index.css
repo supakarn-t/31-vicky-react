@@ -7,4 +7,26 @@
 	:hover {
 		@apply transition duration-200;
 	}
+
+	h1 {
+		@apply text-5xl font-bold text-center;
+	}
+	h2 {
+		@apply text-xl font-bold;
+	}
+
+	input {
+		@apply outline-none;
+	}
+
+	table {
+		@apply w-3/4 xl:w-2/3;
+	}
+	th,
+	td {
+		@apply border border-sky-300 h-16;
+	}
+	th {
+		@apply bg-sky-300;
+	}
 }
