@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export default function ErrorPage() {
 	const error = useRouteError();
-	console.log(error);
 
 	return (
 		<div className="flex flex-col justify-center items-center gap-8 h-screen bg-gradient-to-br from-cyan-200 to-sky-300 ">

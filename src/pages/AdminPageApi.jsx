@@ -37,7 +37,6 @@ export default function Admin({ userList, setUserList }) {
 				"https://jsd5-mock-backend.onrender.com/members",
 				user
 			);
-			console.log(user);
 			setReload(!reload);
 		} catch (error) {
 			console.error("Failed to post data:", error);
@@ -58,7 +57,6 @@ export default function Admin({ userList, setUserList }) {
 			);
 			setReload(!reload);
 		} catch (error) {
-			console.log(user);
 			console.error("Failed to put data:", error);
 		}
 	}
@@ -168,10 +166,10 @@ export default function Admin({ userList, setUserList }) {
 				{userList.length !== 0 && (
 					<thead>
 						<tr>
-							<th className="w-1/4">First Name</th>
-							<th className="w-1/4">Last Name</th>
-							<th className="w-1/4">Position</th>
-							<th className="w-1/8">Action</th>
+							<th className="w-[30%]">First Name</th>
+							<th className="w-[30%]">Last Name</th>
+							<th className="w-[30%]">Position</th>
+							<th className="w-[10%]">Action</th>
 						</tr>
 					</thead>
 				)}
@@ -215,7 +213,7 @@ export default function Admin({ userList, setUserList }) {
 												className="border border-sky-300 rounded py-2 w-full"
 											/>
 										</td>
-										<td className="text-center">
+										<td className="text-center ">
 											<button
 												onClick={() => {
 													setEdit((eachUser.editStatus = !edit)),
@@ -272,7 +270,7 @@ export default function Admin({ userList, setUserList }) {
 							<td colSpan={5} className="text-right border-none">
 								<button
 									onClick={() => {
-										setUserList([]), setUserId(1);
+										alert("You can't delete all users on API!");
 									}}
 									className="bg-red-500 text-white hover:bg-red-700 px-4 py-2 rounded-xl"
 								>
