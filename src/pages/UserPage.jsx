@@ -1,4 +1,4 @@
-import PageButton from "../components/ChangePageButton";
+import ChangePageButton from "../components/ChangePageButton";
 import PropTypes from "prop-types";
 
 export default function UserPage({ userList }) {
@@ -9,7 +9,7 @@ export default function UserPage({ userList }) {
 				Home - User Sector
 			</h1>
 
-			<PageButton />
+			<ChangePageButton />
 
 			<table>
 				{userList.length === 0 ? (

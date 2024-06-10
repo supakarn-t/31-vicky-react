@@ -11,13 +11,13 @@ export default function NavBar() {
 	}, [timeNow]);
 
 	return (
-		<nav className="flex justify-between items-center px-4 h-16 bg-sky-200 sticky top-0 z-50">
+		<nav className="flex justify-between items-center px-4 h-16 sticky top-0 z-50 bg-gradient-to-br from-cyan-200 to-sky-300">
 			<p className="font-bold">Time Now: {timeNow}</p>
 			<ul className="flex justify-end gap-4">
 				<li className="h-16">
 					<Link
 						to={"/"}
-						className="flex items-center h-full p-4 hover:bg-sky-300"
+						className="flex items-center h-full p-4 hover:bg-cyan-100"
 					>
 						Home
 					</Link>
@@ -25,7 +25,7 @@ export default function NavBar() {
 				<li className="h-16">
 					<Link
 						to={"/owner"}
-						className="flex items-center h-full p-4 hover:bg-sky-300"
+						className="flex items-center h-full p-4 hover:bg-cyan-100"
 					>
 						Owner
 					</Link>

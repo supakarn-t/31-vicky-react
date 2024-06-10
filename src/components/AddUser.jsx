@@ -37,9 +37,9 @@ export default function AddUser({ user, handleInputChange, handleSubmit }) {
 
 				<button
 					type="submit"
-					className="w-1/2 md:w-1/3 bg-sky-300 p-4 rounded-xl shadow-[4px_4px_0_0_gray] hover:bg-sky-500 hover:text-white hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+					className="w-1/2 md:w-1/3 bg-gradient-to-br from-cyan-200 to-sky-300 p-4 rounded-xl shadow-[7px_7px_0_0_gray] hover:translate-x-1 tr hover:translate-y-1 hover:shadow-[3px_3px_0_0_gray]"
 				>
-					Save
+					Add User
 				</button>
 			</div>
 		</form>

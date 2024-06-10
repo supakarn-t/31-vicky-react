@@ -30,3 +30,8 @@
 		@apply bg-sky-300;
 	}
 }
+
+/* hidden scrollbar */
+*::-webkit-scrollbar {
+	display: none;
+}

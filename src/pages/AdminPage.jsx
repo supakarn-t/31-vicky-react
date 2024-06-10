@@ -1,14 +1,13 @@
 import { useState } from "react";
-import PageButton from "../components/ChangePageButton";
 import PropTypes from "prop-types";
+import AddUser from "../components/AddUser";
+import ChangePageButton from "../components/ChangePageButton";
 import EditButton from "../components/EditButton";
 import DeleteButton from "../components/DeleteButton";
-import AddUser from "../components/AddUser";
 
 export default function Admin({ userList, setUserList, userId, setUserId }) {
 	const [edit, setEdit] = useState(false);
 
-	// create user obj for store input and add to user list
 	const [user, setUser] = useState({
 		id: "",
 		firstName: "",
@@ -17,7 +16,6 @@ export default function Admin({ userList, setUserList, userId, setUserId }) {
 		editStatus: edit,
 	});
 
-	// every change at input update data to user obj
 	function handleInputChange(e) {
 		const { name, value } = e.target;
 
@@ -29,7 +27,6 @@ export default function Admin({ userList, setUserList, userId, setUserId }) {
 		});
 	}
 
-	// when submit form user id +1 and user data will add to user list
 	function handleSubmit(e) {
 		e.preventDefault();
 
@@ -75,7 +72,7 @@ export default function Admin({ userList, setUserList, userId, setUserId }) {
 				Home - Admin Sector
 			</h1>
 
-			<PageButton />
+			<ChangePageButton />
 
 			<AddUser
 				user={user}
